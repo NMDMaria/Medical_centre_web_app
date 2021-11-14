@@ -16,7 +16,7 @@
                 <h4 class="card-title">Despre proiect</h4>
                 <h6 class="card-subtitle mb-2 text-muted">"Activitățile unui centru medical"</h6>
                 <p class="card-text">
-                    În cadrul acestui site vor avea loc interacțiuni dintre clienți și un centru medical. Centrul medical întrunește <span style="color:#FF8360">clinici, cabinete medicale, centre de îngrijire urgentă</span> ce deservesc pacienții prin servicii de calitate și personal calificat.</br> Se remarcă diferite locații ale centrului, denumite sedii, în care pacienții pot primi îngrijire medicală în <span style="color:#FF8360">diverse domenii și specializări</span> spre exemplu: oftalmologie, chirurgie, medicină de familie etc. cât și <span style="color:#FF8360">laboratoare de analiză a probelor biologice.</span></br>
+                    În cadrul acestui site vor avea loc interacțiuni dintre clienți și un centru medical. Centrul medical întrunește <span style="color:#FF8360">clinici, cabinete medicale, centre de îngrijire urgentă</span> ce deservesc pacienții prin servicii de calitate și personal calificat.</br> Se remarcă diferite locații ale centrului, denumite sedii, în care pacienții pot primi îngrijire medicală în <span style="color:#FF8360">diverse domenii și specializări</span> spre exemplu: oftalmologie, chirurgie, medicină de familie etc. cât și <span style="color:#FF8360">laboratoare de analiză a probelor biologice.</span></br>Site-ul se va axa mult mai mult pe interacțiunea medic-pacient decât pe lucruri administrative.
                 </p>
             </div>
         </div>
@@ -31,7 +31,7 @@
         <tbody>
             <tr>
             <td>Guest</td>
-            <td><ul><li>Poate vedea postările de pe pagină.</li><li>Poate verifica rezultatul unor analize pe baza unui cod și al CNP-ului.</li><li>Pentru orice altă acțiune se cere logarea.</li></ul></td>
+            <td><ul><li>Poate vedea postările de pe pagină.</li><li>Poate verifica rezultatul unor analize pe baza unui cod și a CNP-ului.</li><li>Pentru orice altă acțiune se cere logarea.</li></ul></td>
             </tr>
             <tr>
             <td>Utilizator de tip <span style="color:#FF8360">pacient</span></td>
@@ -39,11 +39,11 @@
             </tr>
             <tr>
             <td>Utilizator de tip <span style="color:#FF8360">medic</span></td>
-            <td><ul><li>Opțiunile unui guest</li><li>Acces la istoricul analizelor, al afecțiunilor și al internărilor al pacienților.</li><li>Poate adăuga un document în istoricul unui pacient (fișă de internare, diagnostic, rețetă,etc.)</li><li>Calendar cu programări</li><li>Abilitatea de a muta o programare a unui pacient(acesta fiind notificat)</li><li>Adăugare calificare (curs, studii etc.)</li><li>Schimbare cabinet</li><li>Schimbare sediu</li></ul></td>
+            <td><ul><li>Opțiunile unui guest</li><li>Acces la istoricul analizelor, al afecțiunilor și al internărilor pacienților.</li><li>Poate adăuga un document în istoricul unui pacient (fișă de internare, diagnostic, rețetă,etc.)</li><li>Calendar cu programări</li><li>Abilitatea de a muta o programare a unui pacient(acesta fiind notificat)</li><li>Adăugare calificare (curs, studii etc.)</li><li>Schimbare cabinet</li><li>Schimbare sediu</li></ul></td>
             </tr>
             <tr>
             <td>Administrator</td>
-            <td><ul><li>Opțiunile unui doctor și al unui pacient</li><li>Aprobare mutarea unui medic la alt sediu/cabinet</li><li>Aprobare calificare adăugată de medic</li><li>Ștergere cont</li><li>Adăugare sediu, departament</li></ul></td>
+            <td><ul><li>Modificarea listei de pacienti la care are acces un medic</li><li>Aprobare mutarea unui medic la alt sediu/cabinet</li><li>Aprobare calificare adăugată de medic</li><li>Ștergere cont</li><li>Adăugare sediu, departament</li></ul></td>
             </tr>
         </tbody>
         </table>
