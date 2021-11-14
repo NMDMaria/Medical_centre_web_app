@@ -3,18 +3,19 @@ function generate_head()
 {
   echo '<meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-
    <!-- Bootstrap CSS -->
-   <link href="data/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   <script src="data/bootstrap/js/jquery.min.js"></script>
-   <script src="data/bootstrap/js/bootstrap.min.js"></script>
+   <link href="data/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
    <title>FMI PHP 2021 NMD233</title>';
 }
 function generate_page_upper()
 {
-    echo '  <div style="background:url(images/header_bckg.jpg)" class="jumbotron bg-cover">
+    echo '  
+    <script src="data/bootstrap/js/jquery-3.3.1.slim.min.js" ></script>
+    <script src="data/bootstrap/js/popper.min.js"></script>
+    <script src="data/bootstrap/js/bootstrap.min.js"></script>
+    <div style="background:url(images/header_bckg.jpg)" class="jumbotron bg-cover">
         <div class="container py-5 text-center">
                 <p style = "font-family: Roboto Condensed; color: #280000">Proiect realizat de Negrut Maria-Daniela grupa 233 in cadrul cursului "Dezvoltarea Aplicatiilor Web in PHP" FMI Unibuc (2021)</p>
             <h1 style = "font-family: Zen Antique Soft; color: #E13700"class="display-1 font-weight-bolder">Centrul medical Sirona</h1>
@@ -23,33 +24,40 @@ function generate_page_upper()
 
     <nav style = "background-color: #6B6570" class="navbar sticky-top navbar-expand-lg navbar-dark shadow">
     <div class="container-fluid">
-        <a class="navbar-brand" href="http://negrutmariadaniela.infinityfreeapp.com/">Centrul medical Sirona</a>
+        <a class="navbar-brand" href="https://negrutmariadaniela.infinityfreeapp.com/">Centrul medical Sirona</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link disabled" class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link disabled" class="nav-link" href="#">Link</a>
+            <a class="nav-link" class="nav-link" href="/">Despre</a>
             </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link disabled" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <li class="nav-item">
+            <a class="nav-link disabled" class="nav-link" href="#">Rezultate analize</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" class="nav-link" href="#">Programare</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right justify-content-end">
+         <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contul meu</a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="#" class="dropdown-item disabled">Conecteaza-te</a>
+                    </div>
+         </li>
         </ul>
         </div>
     </div>
-    </nav>';
+    </nav>
+
+
+    
+    ';
 }
 function generate_page_lower()
 {
