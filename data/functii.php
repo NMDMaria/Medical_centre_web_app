@@ -24,7 +24,7 @@ function generate_page_upper()
 
     <nav style = "background-color: #6B6570" class="navbar sticky-top navbar-expand-lg navbar-dark shadow">
     <div class="container-fluid">
-        <a class="navbar-brand" href="https://negrutmariadaniela.infinityfreeapp.com/">Centrul medical Sirona</a>
+        <a class="navbar-brand" href="/">Centrul medical Sirona</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
