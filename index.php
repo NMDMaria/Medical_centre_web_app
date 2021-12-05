@@ -1,12 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-     <?php include('data/functii.php');
-            generate_head();?>
-  </head>
-  <body>
-  <?php generate_page_upper();?>
-
+<?php include_once 'data/header.php'; ?>
     <!--
     Page data that isn't generated from php functions.
     !-->
@@ -48,13 +40,13 @@
         </tbody>
         </table>
 
-        
+
         <div class="row card w-80 shadow">
             <div class="card-body">
                 <h4 class="card-title">Diagrama conceptuală</h4>
                 <h6 class="card-subtitle mb-2 text-muted"></h6>
                 <p class="card-text"><span style="color:#FF8360">Specificații:</span></br>Relațiile administrator(utlizator)-angajat, medic(utilizator)-angajat și pacient(utilizator)-pacient sunt de One to One</br>Atributele nu sunt finalizate.</p>
-                <a href="/images/schema1.jpg"><img class="img-fluid card-img-bottom" src="/images/schema1.jpg" alt="Card image cap"></a>
+                <a href="images/schema1.jpg"><img class="img-fluid card-img-bottom" src="images/schema1.jpg" alt="Card image cap"></a>
             </div>
         </div>
 
@@ -62,12 +54,8 @@
             <div class="card-body">
                 <h4 class="card-title">Diagrama Use-Case</h4>
                 <h6 class="card-subtitle mb-2 text-muted"></h6>
-                <a class="d-flex justify-content-center" href="/images/d_use_case.png"><img style="height:50%;width:auto;" class="img-fluid card-img-bottom" src="/images/d_use_case.png" alt="Card image cap"></a>
+                <a class="d-flex justify-content-center" href="images/d_use_case.png"><img style="height:50%;width:auto;" class="img-fluid card-img-bottom" src="images/d_use_case.png" alt="Card image cap"></a>
             </div>
         </div>
   </div>
-
-  </body>
-
-  <?php generate_page_lower();?>
-</html>
+<?php include_once 'data/footer.php';?>
