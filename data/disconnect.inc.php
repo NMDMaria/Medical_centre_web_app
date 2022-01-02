@@ -4,4 +4,8 @@ if (session_status() != 2)
   session_start();
 session_unset();
 mysqli_close($conn);
-header("location: ../index.php");
+?>
+<script type="text/javascript">
+window.location.href = '../index.php';
+</script>
+<?php

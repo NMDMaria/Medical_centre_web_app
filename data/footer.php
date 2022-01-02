@@ -17,7 +17,6 @@
           Contact
         </h6>
         <p> Negruț Maria-Daniela grupa 233</p>
-        <p>Email: <a href="mailto:maria.negrut@s.unibuc.ro">maria.negrut@s.unibuc.ro</p></a>
         <p>
       </div>
     </div>

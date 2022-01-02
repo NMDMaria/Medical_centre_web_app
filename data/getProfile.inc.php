@@ -9,11 +9,11 @@
 
       if (!mysqli_stmt_prepare($stmt, $sql))
       {
-         ?>
-    <script type="text/javascript">
-    window.location.href = 'https://negrutmariadaniela.000webhostapp.com/profile.php?error=wrong';
-    </script>
-    <?php
+        ?>
+        <script type="text/javascript">
+        window.location.href = '../profile.php?error=wrong';
+        </script>
+        <?php
         exit();
       }
 
@@ -29,16 +29,17 @@
     }
     if ($type == 'angajati')
     {
+      /* join on tables */
       $sql = 'SELECT a.nume "nume", a.prenume "prenume", a.cnp "cnp", a.data_nasterii "data_nasterii", a.data_angajarii "data_angajarii", a.nr_telefon "nr_telefon", a.salariu "salariu", a.bonus "bonus", a.angajat_type "angajat_type", a.domeniu "domeniu", a.email "email", sj.nume_slujba "slujba", s.denumire_sediu "sediu", a.cabinet_nr_camera "cabinet", a.id_sediu "id_sediu" from angajati a, sedii s, slujbe sj where a.id_sediu = s.id_sediu and sj.id_slujba = a.id_slujba and a.id_user = ?;';
       $stmt = mysqli_stmt_init($conn);
 
       if (!mysqli_stmt_prepare($stmt, $sql))
       {
         ?>
-    <script type="text/javascript">
-    window.location.href = 'https://negrutmariadaniela.000webhostapp.com/profile.php?error=wrong';
-    </script>
-    <?php
+        <script type="text/javascript">
+        window.location.href = '../profile.php?error=wrong';
+        </script>
+        <?php
         exit();
       }
 
@@ -64,6 +65,7 @@
       return $angajati;
     return false;
   }
+
   function profile_type($conn, $id_user)
   {
     $sql = "select 1 from pacienti where id_user = ?;";
@@ -72,10 +74,10 @@
     if (!mysqli_stmt_prepare($stmt, $sql))
     {
       ?>
-    <script type="text/javascript">
-    window.location.href = 'https://negrutmariadaniela.000webhostapp.com/profile.php?error=wrong';
-    </script>
-    <?php
+      <script type="text/javascript">
+      window.location.href = '../profile.php?error=wrong';
+      </script>
+      <?php
       exit();
     }
 
@@ -93,11 +95,11 @@
 
     if (!mysqli_stmt_prepare($stmt, $sql))
     {
-         ?>
-    <script type="text/javascript">
-    window.location.href = 'https://negrutmariadaniela.000webhostapp.com/profile.php?error=wrong';
-    </script>
-    <?php
+      ?>
+      <script type="text/javascript">
+      window.location.href = '../profile.php?error=wrong';
+      </script>
+      <?php
       exit();
     }
 
@@ -115,24 +117,25 @@
 
   if (session_status() != 2) session_start();
   $id_user = $_SESSION['login'];
-  if (isset($_SESSION['admin']) && $_SESSION['admin'] == 1)
+  if (isset($_SESSION['admin']) && $_SESSION['admin'] == 1) // adminii au alta pagina nu au ce sa caute aici
   {
     ?>
     <script type="text/javascript">
-    window.location.href = 'https://negrutmariadaniela.000webhostapp.com/admin_homepage.php';
+    window.location.href = '../admin_homepage.php';
     </script>
     <?php
     exit();
   }
+
   $result = [];
   $profile_type = profile_type($conn, $id_user);
-  if ($profile_type == false)
+  if ($profile_type == false) // se incearca intrarea fie nelogat fie de catre un cont
   {
       ?>
-    <script type="text/javascript">
-    window.location.href = 'https://negrutmariadaniela.000webhostapp.com/profile.php?error=wrong';
-    </script>
-    <?php
+      <script type="text/javascript">
+      window.location.href = '../profile.php?error=wrong';
+      </script>
+      <?php
       exit();
   }
   else

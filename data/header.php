@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
   <link href="data/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="data/calendar/main.css" rel='stylesheet'>
   <title>FMI PHP 2021 NMD233</title>
 </head>
 
-<script src="data/bootstrap/js/jquery-3.3.1.slim.min.js" ></script>
-<script src="data/bootstrap/js/popper.min.js"></script>
+<script src="data/bootstrap/js/jquery-3.3.1.min.js" ></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="data/bootstrap/js/bootstrap.min.js"></script>
+<script src="data/calendar/main.js"></script>
+<script src='https://www.hCaptcha.com/1/api.js' async defer></script>
+
 <div style="background:url(images/header_bckg.jpg)" class="jumbotron bg-cover">
     <div class="container py-5 text-center">
             <p style = "font-family: Roboto Condensed; color: #280000">Proiect realizat de Negrut Maria-Daniela grupa 233 in cadrul cursului "Dezvoltarea Aplicatiilor Web in PHP" FMI Unibuc (2021)</p>
@@ -37,7 +41,10 @@
         <a class="nav-link disabled" class="nav-link" href="#">Rezultate analize</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link disabled" class="nav-link" href="#">Programare</a>
+        <a class="nav-link" class="nav-link" href="./calendar.php">Calendar Programări</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" class="nav-link" href="./programare.php">Programare</a>
         </li>
     </ul>
     <ul class="nav navbar-nav navbar-right justify-content-end">
