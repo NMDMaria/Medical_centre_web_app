@@ -1,4 +1,6 @@
 <?php include_once 'data/header.php'; ?>
+
+
 <div class="container pt-5 pb-5">
     <div class="row card w-80 shadow">
         <div class="card-body">
@@ -14,10 +16,10 @@
                 $msg = "Username invalid.";
               if ($err == 'notvalidmail')
                 $msg = 'Email invalid.';
-              if ($err == 'missmatchpassword')
-                $msg = 'Parolele nu se potrivesc.';
               if ($err == 'usernotexists')
                 $msg = 'Utilizatorul nu există. Verificați datele și încercați iar sau înregistrați-vă.';
+              if ($err == 'captcha')
+                $msg = 'Captcha nu a fost validat. Încercați iar.';
               if ($err == 'wrong')
                 $msg = 'Ceva a mers prost :(. Încercați iar.';
               if ($msg !== '')
@@ -30,10 +32,14 @@
                 <input class="form-control w-50" type="text" name="data" placeholder="Username/email"></br>
                 <label class="form-check-label" for="password"> <h6>Parola</h6></label>
                 <input class="form-control w-50" type="password" name="pswr"></br>
+                <div class="h-captcha" data-sitekey="8dcda850-d58a-4505-b899-338f7cc261ac"></div></br></br>
                 <button class="btn btn-outline-secondary" type="submit" name="submit">Login</button>
             </form>
+            </br><a href="./signup.php">Încă nu ai cont? Înregistrează-te acum.</a></br>
           </div>
         </div>
     </div>
 </div>
+
+
 <?php include_once 'data/footer.php';?>
