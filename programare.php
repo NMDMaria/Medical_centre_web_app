@@ -16,7 +16,7 @@ if (isset($_SESSION['doctor'])) // doctorii nu fac programari
 {
   ?>
   <script type="text/javascript">
-  window.location.href = './calendar.php';
+  window.location.href = './manage_programari.php';
   </script>
   <?php
   exit();
