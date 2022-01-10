@@ -17,7 +17,7 @@
           Contact
         </h6>
         <p> Negruț Maria-Daniela grupa 233</p>
-        <p>
+        <p>Current IP: <?= $_SERVER['REMOTE_ADDR'] ?></p>
       </div>
     </div>
   </div>

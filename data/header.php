@@ -46,6 +46,11 @@
         <li class="nav-item">
         <a class="nav-link" class="nav-link" href="./programare.php">Programare</a>
         </li>
+        <?php if(isset($_SESSION['pacient'])):?>
+          <li class="nav-item">
+          <a class="nav-link" class="nav-link" href="./istoric.php">Istoric</a>
+          </li>
+        <?php endif;?>
     </ul>
     <ul class="nav navbar-nav navbar-right justify-content-end">
      <li class="nav-item dropdown">
