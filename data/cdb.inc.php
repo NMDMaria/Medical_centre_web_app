@@ -1,11 +1,5 @@
 <?php
 
-/*
-$serverName = "localhost";
-$dbUser = "newuser";
-$dbPassword = "";
-$dbName = "spital";
-*/
 $serverName = "localhost";
 $dbUser = "id17938187_newuser";
 $dbPassword = "";
